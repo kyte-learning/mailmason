@@ -15,7 +15,7 @@ COPY . .
 RUN gem install premailer && \
     gem install nokogiri
 
-CMD [ "npm", "start" ]
+RUN npm run build && npm run images:s3
 
 # STAGE 2: Setup #
 ##################
