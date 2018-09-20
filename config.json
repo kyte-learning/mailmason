@@ -1,0 +1,40 @@
+{
+  "postmark": {
+    "from": "support@kytelearning.com",
+    "to": "kyte-mailmason@email.ghostinspector.com",
+    "subject": "Test Email"
+  },
+  "strings": {
+    "sender_name": "Gizmo",
+    "product_name": "Kyte Learning",
+    "product_url": "https://kytelearning.com",
+    "credit_card_statement_name": "Kyte Learning",
+    "formal_company_name": "iSchool Campus, LLC",
+    "address_line_1": "5505 S 900 E",
+    "address_line_2": "Suite 315",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "country": "United States",
+    "phone": "‭888-950-8324‬"
+  },
+  "images": {
+    "use_images": true,
+    "images_url": "https://cdn.kytelearning.com/email/images/",
+    "logo_file": "kyte_flock_logo.png",
+    "logo_width": "40",
+    "use_social_circles": false,
+    "twitter_url": "https://twitter.com/kytelearning",
+    "facebook_url": "https://www.facebook.com/kytelearning",
+    "pinterest_url": "",
+    "instagram_url": "https://www.instagram.com/kytelearning/",
+    "google_plus_url": "",
+    "youtube_url": "https://www.youtube.com/channel/UCaHzmSjoqAzBaUCZjvfljig",
+    "linkedin_url": "https://www.linkedin.com/company/kyte-learning",
+    "dribbble_url": ""
+  },
+  "s3": {
+    "bucket": "kyte-email-assets",
+    "region": "us-east-1",
+    "overwrite": true
+  }
+}
