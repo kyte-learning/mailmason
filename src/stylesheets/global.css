@@ -123,6 +123,33 @@ td {
   .attributes_item {
     padding: 0; }
 
+/* Notification Lists ------------------------- */
+/* Attribute list ------------------------------ */
+.notifications {
+  margin: 0 0 21px; }
+
+.notifications_content {
+  background-color: #FFFFFF;
+  padding: 16px 16px 0 16px;
+  border-bottom: 1px solid #E2E2E2; }
+
+.notification_icon {
+  width: 25px;
+  padding-right: 15px;
+  text-align: left; }
+
+.notifications_item {
+  padding: 20px 0;
+  border-top: 1px solid #E2E2E2; }
+
+.notifications_link {
+  text-decoration: none;
+  color: #9b9a9b;
+  font-size: 14px; }
+
+.notifications_description {
+  color: #2F3133; }
+
 /* Related Items ------------------------------ */
 .related {
   width: 100%;
@@ -243,6 +270,7 @@ td {
   color: #FFF;
   text-decoration: none;
   border-radius: 3px;
+  text-align: center;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
   -webkit-text-size-adjust: none; }
   .button--green {
@@ -257,6 +285,12 @@ td {
     border-right: 18px solid #FF6136;
     border-bottom: 10px solid #FF6136;
     border-left: 18px solid #FF6136; }
+  .button--pink {
+    background-color: #E91E63;
+    border-top: 10px solid #E91E63;
+    border-right: 18px solid #E91E63;
+    border-bottom: 10px solid #E91E63;
+    border-left: 18px solid #E91E63; }
 
 /* Type ------------------------------ */
 h1 {

@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>{{invite_sender_name}} invited you to Kyte Learning</title>
+  <title>{{announcer_name}} made an annoucenemt</title>
     <!-- 
     The style block is collapsed on page load to save you some scrolling.
     Postmark automatically inlines all CSS properties for maximum email client 
@@ -343,7 +343,7 @@ p.center {
 </head>
 
 <body>
-<span class="preheader">{{invite_sender_name}} with {{invite_sender_organization_name}} has invited you to use Kyte Learning to collaborate with them.</span>
+
 <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
   <tr>
     <td align="center">
@@ -365,23 +365,62 @@ p.center {
         <tr>
           <td class="content-cell">
 
-            <h1>Hi, {{name}}!</h1>
-            <p>{{invite_sender_name}} with {{invite_sender_organization_name}} has invited you to use Kyte Learning to collaborate with them. Use the button below to set up your account and get started:</p>
-
-            <!-- Action -->
-            <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
+            <table class="notifications" width="100%" cellpadding="0" cellspacing="0">
               <tr>
-                <td align="center">
-                  <!-- Border based button
-                       https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design -->
-                  
-                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td class="notifications_content">
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                    
                     <tr>
-                      <td align="center">
-                        <table border="0" cellspacing="0" cellpadding="0">
+                      <td class="notifications_item">
+                        <table width="100%" cellpadding="0" cellspacing="0">
                           <tr>
+                            <td class="notification_icon">
+                              <img title="comment" src="https://s3.amazonaws.com/kyte-email-assets/email/images/comment_icon.png">
+                            </td>
                             <td>
-                              <a href="{{action_url}}" class="button button--" target="_blank">Set up account</a>
+                              <a class="notifications_link" href="">
+                                Comment<br>
+                                <span class="notifications_description">You have done a great job today! We are all so very proud of you
+                                  and your accomplishments.</span><br>
+                                1 hour ago
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="notifications_item">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td class="notification_icon">
+                              <img title="task" width="18" height="21" src="https://s3.amazonaws.com/kyte-email-assets/email/images/task_icon.png">
+                            </td>
+                            <td>
+                              <a class="notifications_link" href="">
+                                Task<br>
+                                <span class="notifications_description">Your task submission has been approved.</span><br>
+                                1 hour ago
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="notifications_item">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td class="notification_icon">
+                              <img title="announcement" width="21" height="19" src="https://s3.amazonaws.com/kyte-email-assets/email/images/announcement_icon.png">
+                            </td>
+                            <td>
+                              <a class="notifications_link" href="">
+                                Announcement<br>
+                                <span class="notifications_description">Everyone needs to log their cute little bums in and complete some
+                                  courses so that they learn a few new things in life.</span><br>
+                                1 hour ago
+                              </a>
                             </td>
                           </tr>
                         </table>
@@ -390,75 +429,65 @@ p.center {
                   </table>
                 </td>
               </tr>
-            </table>
-
-            <p>If you have any questions for {{invite_sender_name}}, you can reply to this email and it will go right to them. Alternatively, feel free to <a href="mailto:{{support_email}}">contact our customer success team</a> anytime. (We're lightning quick at replying.) We also offer <a href="{{live_chat_url}}">live chat</a> during business hours.</p>
-
-            <p>Welcome aboard,<br>The Kyte Learning Team</p>
-            <p><strong>P.S.</strong> Need help getting started? Check out our <a href="{{help_url}}">help documentation</a>.</p>
-
-            <!-- Sub copy -->
-            <table class="body-sub">
               <tr>
-                <td>
-                  <p class="sub">If you’re having trouble with the button above, copy and paste the URL below into your web browser.</p>
-                  <p class="sub">{{action_url}}</p>
+                <td height="100" class="align-right">
+                  <a class="button button--pink" href="#">View all</a>
                 </td>
               </tr>
             </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
 
-  <tr>
-    <td>
-      <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0">
-        <tr>
-          <td class="content-cell" align="center">
-            <table class="social" align="center" width="570" cellpadding="0" cellspacing="0">
-              <tr>
-                <td class="align-center">
-                  <a href="https://www.facebook.com/kytelearning">
-                    <img src="https://cdn.kytelearning.com/email/images/facebook.png" height="20" alt="Facebook" class="social_icon">
-                  </a>
-                </td>
-                <td class="align-center">
-                  <a href="https://twitter.com/kytelearning">
-                    <img src="https://cdn.kytelearning.com/email/images/twitter.png" height="20" alt="Twitter" class="social_icon">
-                  </a>
-                </td>
-                <td class="align-center">
-                  <a href="https://www.instagram.com/kytelearning/">
-                    <img src="https://cdn.kytelearning.com/email/images/instagram.png" height="20" alt="Instagram" class="social_icon">
-                  </a>
-                </td>
-                <td class="align-center">
-                  <a href="https://www.linkedin.com/company/kyte-learning">
-                    <img src="https://cdn.kytelearning.com/email/images/linkedin.png" height="20" alt="LinkedIn" class="social_icon">
-                  </a>
-                </td>
-                <td class="align-center">
-                  <a href="https://www.youtube.com/channel/UCaHzmSjoqAzBaUCZjvfljig">
-                    <img src="https://cdn.kytelearning.com/email/images/youtube.png" height="20" alt="YouTube" class="social_icon">
-                  </a>
-                </td>
-              </tr>
-            </table>
-            <p class="sub align-center">&copy; 2018 Kyte Learning. All rights reserved.</p>
-            <p class="sub align-center">
-              iSchool Campus, LLC
-              <br>5505 S 900 E
-              <br>Suite 315
-            </p>
           </td>
         </tr>
       </table>
     </td>
   </tr>
 </table>
-</td>
+
+<tr>
+  <td>
+    <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="content-cell" align="center">
+          <table class="social" align="center" width="570" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="align-center">
+                <a href="https://www.facebook.com/kytelearning">
+                  <img src="https://cdn.kytelearning.com/email/images/facebook.png" height="20" alt="Facebook" class="social_icon">
+                </a>
+              </td>
+              <td class="align-center">
+                <a href="https://twitter.com/kytelearning">
+                  <img src="https://cdn.kytelearning.com/email/images/twitter.png" height="20" alt="Twitter" class="social_icon">
+                </a>
+              </td>
+              <td class="align-center">
+                <a href="https://www.instagram.com/kytelearning/">
+                  <img src="https://cdn.kytelearning.com/email/images/instagram.png" height="20" alt="Instagram" class="social_icon">
+                </a>
+              </td>
+              <td class="align-center">
+                <a href="https://www.linkedin.com/company/kyte-learning">
+                  <img src="https://cdn.kytelearning.com/email/images/linkedin.png" height="20" alt="LinkedIn" class="social_icon">
+                </a>
+              </td>
+              <td class="align-center">
+                <a href="https://www.youtube.com/channel/UCaHzmSjoqAzBaUCZjvfljig">
+                  <img src="https://cdn.kytelearning.com/email/images/youtube.png" height="20" alt="YouTube" class="social_icon">
+                </a>
+              </td>
+            </tr>
+          </table>
+          <p class="sub align-center">&copy; 2018 Kyte Learning. All rights reserved.</p>
+          <p class="sub align-center">
+            iSchool Campus, LLC
+            <br>5505 S 900 E
+            <br>Suite 315
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr></td>
   </tr>
 </table>
 

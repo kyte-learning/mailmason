@@ -89,6 +89,41 @@
   }
 }
 
+/* Notification Lists ------------------------- */
+
+/* Attribute list ------------------------------ */
+
+  .notifications {
+    margin: 0 0 21px;
+  }
+
+  .notifications_content {
+    background-color: #FFFFFF;
+    padding: 16px 16px 0 16px;
+    border-bottom: 1px solid #E2E2E2;
+  }
+
+  .notification_icon {
+    width: 25px;
+    padding-right: 15px;
+    text-align: left;
+  }
+
+  .notifications_item {
+    padding: 20px 0;
+    border-top: 1px solid #E2E2E2;
+  }
+
+  .notifications_link {
+    text-decoration: none;
+    color: #9b9a9b;
+    font-size: 14px;
+  }
+
+  .notifications_description {
+    color: #2F3133;
+  }
+
 /* Related Items ------------------------------ */
 
 .related {
