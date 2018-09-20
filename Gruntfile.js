@@ -199,7 +199,8 @@ module.exports = function(grunt) {
       },
       build: {
         cwd: path.images_src,
-        src: "**"
+        src: "**",
+        dest: "email/images/"
       }
     },
 
