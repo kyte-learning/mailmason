@@ -1,1 +1,5 @@
-{ "type": "static" }
+{
+  "type": "static",
+  "name": "mailmason",
+  "alias": "mailmason.dev.kytelearning.app"
+}
